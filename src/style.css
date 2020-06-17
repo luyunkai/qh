@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: #eee;
+}
+.searchForm{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width: 500px){
+    .searchForm{
+        max-width: 400px;
+        margin: 20px auto 0;
+    }
+    
+}
+.searchForm > input{
+    width: 100%;
+    margin-right: 10px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.searchForm > button{
+    white-space: nowrap;
+    padding: 0 28px;
+    border: none;
+    border-radius: 4px;
+    background: #0282B9;
+    color: white;
+    font-size: 16px;
+}
+.globalMain{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.siteList{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media(min-width:500px){
+    .siteList{
+        margin-left: 0;
+        margin-right: -25px;
+        justify-content: flex-start;
+    }
+    .siteList > li{
+        margin-right: 25px;
+    }
+}
+.siteList > li{
+    margin-bottom: 10px;
+}
+.siteList .site{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px 0;
+    position: relative;
+    cursor: pointer;
+}
+.siteList .site > .loge{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+.siteList .site > .link{
+    font-size: 14px;
+    margin-top: 4px;
+}
+.siteList .addButton{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px 0;
+
+}
+.addButton .icon{
+    width: 64px;
+}
+.addButton .text{
+        font-size: 14px;
+    margin-top: 4px;
+
+}
+.site .loge img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    cursor: default;
+}
+.closeImg{
+    height: 20px;
+}
+.site:hover > .close{
+    display: block;
+}
